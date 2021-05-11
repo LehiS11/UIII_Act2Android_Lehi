@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyMuebleriaApp());
+void main() => runApp(MyCCApp());
 
-class MyMuebleriaApp extends StatelessWidget {
+class MyCCApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Mi Muebleria',
+        title: 'Mi Centro de Computo',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.green,
         ),
 
         //Ruta de ventanas
@@ -21,7 +21,7 @@ class MyMuebleriaApp extends StatelessWidget {
         }, //Fin rutas
         home: Inicio()); //Fin MaterialApp
   } //Fin build
-} //Fin muebleria
+} //Fin CCApp
 
 class Empresa extends StatelessWidget {
   @override
@@ -48,7 +48,7 @@ class Productos extends StatelessWidget {
       ), //Fin AppBar
       body: Center(
         child: Text(
-          'Seccion Productos Luhi',
+          'Seccion Productos Lehi',
         ),
       ),
     ); //Fin Scaffold
@@ -64,7 +64,7 @@ class Contacto extends StatelessWidget {
       ), //Fin AppBar
       body: Center(
         child: Text(
-          'Seccion Contactos Luhi',
+          'Seccion Contactos Lehi',
         ),
       ),
     ); //Fin Scaffold
@@ -78,7 +78,7 @@ class Inicio extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
         decoration: BoxDecoration(
-          color: Colors.blueGrey,
+          color: Colors.greenAccent,
           image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/LehiS11/Mis_Imagenes6J/main/img%20cc.jpg"), alignment: Alignment.topCenter)),
           child: Column(
             children: <Widget>[
@@ -111,7 +111,7 @@ class Inicio extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
-                        color: Colors.white,
+                        color: Colors.black,
                         shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/empresa");
@@ -159,7 +159,7 @@ class Inicio extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
-                        color: Colors.white,
+                        color: Colors.black,
                         shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/contacto");
